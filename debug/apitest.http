@@ -1,0 +1,21 @@
+@baseUri=http://localhost:3000/api
+
+###gen wallpaper
+POST {{baseUri}}/chat 
+Content-Type: application/json
+
+{
+    "messages":[
+        {
+            "id":"user",
+            "role":"user",
+            "content":"帮我写一首关于秋天的五言绝句。",
+            "parts":[
+                {
+                    "type":"text",
+                    "text":"帮我写一首关于秋天的五言绝句。"
+                }
+            ]
+        }
+    ]
+}
